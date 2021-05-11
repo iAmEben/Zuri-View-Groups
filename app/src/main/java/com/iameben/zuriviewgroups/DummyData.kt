@@ -1,7 +1,7 @@
 package com.iameben.zuriviewgroups
 
 object DummyData {
-    val funFacts = listof(
+    val facts = listOf<FactModel>(
         FactModel(
             "Kotlin",
             R.drawable.kotlin_logo,
