@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/detailTv"
-        app:layout_constraintTop_toTopOf="@id/logoIv"
+        app:layout_constraintTop_toBottomOf="@id/logoIv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"

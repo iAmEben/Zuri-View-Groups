@@ -1,6 +1,7 @@
 package com.iameben.zuriviewgroups
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,8 +25,20 @@ class FactAdapter(context: Context, facts:List<FactModel>): ArrayAdapter<FactMod
         }
         name?.text = fact?.name
 
+        view?.setOnClickListener{
+            val intent = Intent(parent.context, DetailActivity::class.java)
+            intent.putExtra(LOGO_EXTRAs,fact?.logo)
+            intent.putExtra(NAME_EXTRAs,fact?.name)
+            intent.putExtra(FACT_EXTRAs,fact?.fact)
+            parent.context.startActivity(intent)
+        }
 
         return view!!
+    }
+    companion object{
+        val LOGO_EXTRAs = "logo_extras"
+        val NAME_EXTRAs = "name_extras"
+        val FACT_EXTRAs = "fact_extras"
     }
 
 }
