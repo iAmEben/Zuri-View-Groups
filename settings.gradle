@@ -1,0 +1,2 @@
+rootProject.name = "Zuri View Groups"
+include ':app'
