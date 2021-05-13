@@ -3,4 +3,5 @@
     <string name="login_text">login</string>
     <string name="email_text">email</string>
     <string name="password_text">password</string>
+    <string name="writeup_text">Please! Do not forget your passoword, no one has it and I cannot help you find it.</string>
 </resources>

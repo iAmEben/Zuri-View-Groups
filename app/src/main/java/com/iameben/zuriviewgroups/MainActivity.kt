@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpFact(){
-        adapter = FactAdapter(this, DummyData.facts)
+        adapter = FactAdapter(this, DummyData.funFacts)
         binding?.factLV?.adapter = adapter
     }
     override fun onDestroy() {

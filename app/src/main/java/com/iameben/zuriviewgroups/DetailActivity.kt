@@ -16,11 +16,12 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_detail)
+        setContentView(binding?.root)
 
         logo = intent.getIntExtra(FactAdapter.LOGO_EXTRAs, 0)
-        name = intent.getStringExtra(FactAdapter.NAME_EXTRAs)
-        detail = intent.getStringExtra(FactAdapter.FACT_EXTRAs)
+        name = intent.getStringExtra(FactAdapter.NAME_EXTRAS)
+        detail = intent.getStringExtra(FactAdapter.FACT_EXTRAS)
+        setUpFactDetail()
     }
 
     private fun setUpFactDetail(){

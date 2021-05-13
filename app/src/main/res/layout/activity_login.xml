@@ -35,18 +35,30 @@
             android:layout_marginTop="30dp"
             android:hint="@string/email_text"
             android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_edit_text"
             android:layout_marginStart="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_width="350dp"
+            android:layout_height="30dp"/>
 
         <EditText
+            android:id="@+id/password_tv"
             android:layout_below="@+id/email_et"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:hint="@string/password_text"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
+            android:layout_width="350dp"
+            android:background="@drawable/custom_edit_text"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_below="@+id/password_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            android:fontFamily="monospace"
+            android:text="@string/writeup_text"
+            android:layout_height="match_parent"/>
 
     </RelativeLayout>
 

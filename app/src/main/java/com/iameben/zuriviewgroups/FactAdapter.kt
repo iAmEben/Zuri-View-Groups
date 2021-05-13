@@ -28,17 +28,18 @@ class FactAdapter(context: Context, facts:List<FactModel>): ArrayAdapter<FactMod
         view?.setOnClickListener{
             val intent = Intent(parent.context, DetailActivity::class.java)
             intent.putExtra(LOGO_EXTRAs,fact?.logo)
-            intent.putExtra(NAME_EXTRAs,fact?.name)
-            intent.putExtra(FACT_EXTRAs,fact?.fact)
+            intent.putExtra(NAME_EXTRAS,fact?.name)
+            intent.putExtra(FACT_EXTRAS,fact?.fact)
             parent.context.startActivity(intent)
         }
 
         return view!!
     }
+
     companion object{
         val LOGO_EXTRAs = "logo_extras"
-        val NAME_EXTRAs = "name_extras"
-        val FACT_EXTRAs = "fact_extras"
+        val NAME_EXTRAS = "name_extras"
+        val FACT_EXTRAS = "fact_extras"
     }
 
 }
