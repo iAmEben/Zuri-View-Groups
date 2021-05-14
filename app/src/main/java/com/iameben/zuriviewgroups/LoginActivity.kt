@@ -27,6 +27,11 @@ class LoginActivity : AppCompatActivity() {
             // converts edittext input to string and compares with expected
             validate(email.text.toString(), password.text.toString())
         }
+
+        //setting initial notes for the user to know the password and email login credentials
+        email.setError("email address is test@test.com")
+        password.setError("password is test")
+
     }
 
     //  function to validate the user's input
