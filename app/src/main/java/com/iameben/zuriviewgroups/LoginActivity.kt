@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.email_et)
         val password = findViewById<EditText>(R.id.password_et)
 
-        click.setOnClickListener{
+        click?.setOnClickListener{
             // converts edittext input to string and compares with expected
             validate(email.text.toString(), password.text.toString())
         }
@@ -35,6 +35,7 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             Toast.makeText(applicationContext, R.string.toast_msg,Toast.LENGTH_SHORT).show()
             startActivity(intent)
+            finish()
         }
 
     }
